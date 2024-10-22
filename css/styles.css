@@ -1,0 +1,178 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #434455;
+  background-color: white;
+  padding: 100px;
+  padding-top: 48px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main-title {
+  margin-bottom: 48px;
+}
+
+.boards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.board {
+  flex-basis: 30%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 14px;
+  min-height: 100px;
+  height: auto;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.board.to-do {
+  background-color: #b4e3f8;
+}
+
+.board.progress {
+  background-color: #d186b9;
+}
+
+.board.done {
+  background-color: #cfe899;
+}
+
+.board-title {
+  margin-bottom: 14px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card {
+  background-color: #fefffd;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 250ms;
+  cursor: pointer;
+  position: relative;
+}
+
+.card:hover {
+  scale: 101%;
+}
+
+.card:active {
+  background-color: #d5d5d5bf;
+}
+
+.card-title-input,
+.card-content-textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #434455;
+  background-color: transparent;
+}
+
+.card-title-input {
+  font-weight: 700;
+  font-size: large;
+  margin-bottom: 8px;
+}
+
+.card-content-textarea {
+  resize: none;
+  padding-left: none;
+}
+
+.remove-card-btn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background-color: #fb8332;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: all 250ms;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.bi {
+  flex-shrink: 0;
+}
+
+.remove-card-btn:hover {
+  background-color: #c85000;
+}
+
+.button {
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  transition: all 250ms;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}

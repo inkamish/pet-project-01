@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boards</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1 class="main-title">Boards</h1>
+    <div class="boards-container">
+      <div
+        class="board to-do"
+        id="to-do"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        <h2 class="board-title">To do</h2>
+        <ul class="card-list"></ul>
+
+        <button class="button add-card">Add card</button>
+      </div>
+      <div
+        class="board progress"
+        id="progress"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        <h2 class="board-title">In progress</h2>
+        <ul class="card-list"></ul>
+      </div>
+      <div
+        class="board done"
+        id="done"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        <h2 class="board-title">Done</h2>
+        <ul class="card-list"></ul>
+      </div>
+    </div>
+    <script src="./js/boards.js"></script>
+  </body>
+</html>
